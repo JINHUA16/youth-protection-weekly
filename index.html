@@ -1,0 +1,369 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>未成年人保护政策周报 · 2026</title>
+<style>
+*,*::before,*::after{margin:0;padding:0;box-sizing:border-box}
+:root{
+  --bg:#f5f5f7;--white:#fff;--surface:#fff;--surface2:#f9f9fb;
+  --border:#d2d2d7;--border-light:#e8e8ed;
+  --text:#1d1d1f;--text2:#6e6e73;--text3:#86868b;
+  --blue:#0071e3;--blue-bg:rgba(0,113,227,0.06);
+  --green:#34c759;--green-bg:rgba(52,199,89,0.07);
+  --amber:#ff9500;--amber-bg:rgba(255,149,0,0.07);
+  --red:#ff3b30;--red-bg:rgba(255,59,48,0.07);
+  --purple:#af52de;--purple-bg:rgba(175,82,222,0.07);
+  --pink:#ff2d55;--pink-bg:rgba(255,45,85,0.07);
+  --cyan:#32ade6;--cyan-bg:rgba(50,173,230,0.07);
+  --teal:#5ac8fa;
+  --radius:16px;--radius-sm:10px;
+}
+body{font-family:-apple-system,BlinkMacSystemFont,'SF Pro Text','SF Pro Display','PingFang SC','Helvetica Neue',sans-serif;background:var(--bg);color:var(--text);-webkit-font-smoothing:antialiased;line-height:1.47059}
+
+/* ===== Icon System (inline SVG via CSS) ===== */
+.icon{display:inline-flex;width:20px;height:20px;flex-shrink:0}
+.icon-lg{width:28px;height:28px}
+.icon svg{width:100%;height:100%}
+
+/* ===== Hero / Header ===== */
+.hero{padding:80px 24px 60px;text-align:center;background:var(--white);border-bottom:1px solid var(--border-light)}
+.hero-label{display:inline-flex;align-items:center;gap:6px;font-size:13px;font-weight:500;color:var(--blue);letter-spacing:-0.01em;margin-bottom:20px}
+.hero-label .pulse-dot{width:7px;height:7px;border-radius:50%;background:var(--green);animation:pulse 2s infinite}
+@keyframes pulse{0%,100%{opacity:1}50%{opacity:.35}}
+.hero h1{font-size:48px;font-weight:700;letter-spacing:-0.03em;color:var(--text);line-height:1.1;max-width:680px;margin:0 auto}
+.hero p{font-size:17px;color:var(--text2);margin-top:14px;font-weight:400;letter-spacing:-0.01em;max-width:520px;margin-inline:auto;line-height:1.5}
+
+/* ===== Stats Row ===== */
+.stats{display:flex;justify-content:center;gap:48px;padding:28px 24px;border-bottom:1px solid var(--border-light);background:var(--white);flex-wrap:wrap}
+.stat{text-align:center}
+.stat-val{font-size:34px;font-weight:700;letter-spacing:-0.02em;color:var(--text)}
+.stat-val.c-blue{color:var(--blue)}.stat-val.c-green{color:var(--green)}.stat-val.c-purple{color:var(--purple)}.stat-val.c-amber{color:var(--amber)}
+.stat-lbl{font-size:12px;color:var(--text3);margin-top:2px;font-weight:500;letter-spacing:0.02em}
+
+/* ===== Section / Container ===== */
+.wrap{max-width:980px;margin:0 auto;padding:0 20px}
+.section{padding:64px 0 0}
+.section-head{margin-bottom:28px}
+.section-head h2{font-size:28px;font-weight:700;letter-spacing:-0.02em;color:var(--text);display:flex;align-items:center;gap:10px}
+.section-head p{font-size:15px;color:var(--text2);margin-top:6px;font-weight:400}
+
+/* ===== Impact Sections ===== */
+.impact-block{background:var(--white);border:1px solid var(--border-light);border-radius:var(--radius);padding:36px;margin-bottom:20px}
+.impact-block.game{border-top:3px solid var(--blue)}
+.impact-block.guardian{border-top:3px solid var(--green)}
+.impact-title{display:flex;align-items:center;gap:12px;margin-bottom:8px}
+.impact-title h3{font-size:21px;font-weight:700;letter-spacing:-0.02em}
+.impact-title .sec-icon{width:36px;height:36px;border-radius:10px;display:flex;align-items:center;justify-content:center;flex-shrink:0}
+.sec-icon.blue{background:var(--blue-bg);color:var(--blue)}
+.sec-icon.green{background:var(--green-bg);color:var(--green)}
+.impact-desc{font-size:14px;color:var(--text2);margin-bottom:24px}
+.impact-list{display:grid;grid-template-columns:repeat(auto-fill,minmax(290px,1fr));gap:14px}
+.imp-card{padding:18px 20px;border-radius:var(--radius-sm);background:var(--surface2);border:1px solid var(--border-light);transition:box-shadow .2s,transform .2s}
+.imp-card:hover{box-shadow:0 2px 10px rgba(0,0,0,.04);transform:translateY(-1px)}
+.imp-card.p0{border-left:3px solid var(--red)}.imp-card.p1{border-left:3px solid var(--amber)}.imp-card.p2{border-left:3px solid var(--cyan)}.imp-card.opp{border-left:3px solid var(--green)}
+.imp-head{display:flex;align-items:center;justify-content:space-between;margin-bottom:8px}
+.pri-tag{font-size:11px;font-weight:600;padding:2px 8px;border-radius:5px;letter-spacing:0.01em}
+.pri-tag.t-p0{background:var(--red-bg);color:var(--red)}.pri-tag.t-p1{background:var(--amber-bg);color:var(--amber)}.pri-tag.t-p2{background:var(--cyan-bg);color:var(--cyan)}.pri-tag.t-opp{background:var(--green-bg);color:var(--green)}
+.imp-time{font-size:11px;color:var(--text3);font-weight:500}
+.imp-card h4{font-size:14px;font-weight:600;margin-bottom:6px;letter-spacing:-0.01em}
+.imp-card p{font-size:12.5px;color:var(--text2);line-height:1.65}
+.imp-card p strong{color:var(--text);font-weight:600}
+.imp-act{margin-top:10px;padding:8px 12px;border-radius:8px;background:var(--white);border:1px solid var(--border-light);font-size:12px;color:var(--blue);font-weight:600;letter-spacing:-0.01em}
+
+/* ===== Insight Summary Cards ===== */
+.insight-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(290px,1fr));gap:14px}
+.ins-card{padding:22px 24px;border-radius:var(--radius-sm);background:var(--white);border:1px solid var(--border-light);transition:box-shadow .2s}
+.ins-card:hover{box-shadow:0 2px 10px rgba(0,0,0,.04)}
+.ins-card .ins-icon{width:32px;height:32px;border-radius:8px;display:flex;align-items:center;justify-content:center;margin-bottom:12px;flex-shrink:0}
+.ins-card h4{font-size:15px;font-weight:600;margin-bottom:6px;letter-spacing:-0.01em}
+.ins-card p{font-size:13px;color:var(--text2);line-height:1.65}
+.ins-card .hl{color:var(--blue);font-weight:600}
+
+/* ===== Policy Table ===== */
+.pol-block{background:var(--white);border:1px solid var(--border-light);border-radius:var(--radius);padding:36px;margin-top:20px}
+.pol-block h3{font-size:21px;font-weight:700;letter-spacing:-0.02em;margin-bottom:4px;display:flex;align-items:center;gap:10px}
+.pol-sub{font-size:14px;color:var(--text2);margin-bottom:20px}
+.pol-table{width:100%;border-collapse:collapse;font-size:13px}
+.pol-table th{text-align:left;padding:10px 12px;font-size:11px;font-weight:600;color:var(--text3);text-transform:uppercase;letter-spacing:.04em;border-bottom:1px solid var(--border)}
+.pol-table td{padding:12px;border-bottom:1px solid var(--border-light);vertical-align:top}
+.pol-table tr:hover td{background:rgba(0,113,227,.02)}
+.issuer{display:inline-flex;padding:2px 8px;border-radius:5px;font-size:11px;font-weight:600;white-space:nowrap}
+.is-red{background:var(--red-bg);color:var(--red)}.is-pink{background:var(--pink-bg);color:var(--pink)}.is-cyan{background:var(--cyan-bg);color:var(--cyan)}.is-purple{background:var(--purple-bg);color:var(--purple)}.is-green{background:var(--green-bg);color:var(--green)}.is-blue{background:var(--blue-bg);color:var(--blue)}.is-amber{background:var(--amber-bg);color:var(--amber)}
+.pol-name{font-weight:600;color:var(--text)}
+.pol-name a{color:inherit;text-decoration:underline;text-decoration-color:rgba(0,113,227,.3);text-underline-offset:3px}
+.pol-name a:hover{color:var(--blue);text-decoration-color:var(--blue)}
+.pol-date{color:var(--text3);white-space:nowrap}
+.sts{display:inline-flex;padding:2px 8px;border-radius:5px;font-size:11px;font-weight:600}
+.sts-ok{background:var(--green-bg);color:var(--green)}.sts-soon{background:var(--amber-bg);color:var(--amber)}
+@media(max-width:768px){.pol-table{display:block;overflow-x:auto}}
+
+/* ===== Weekly Timeline ===== */
+.wk{background:var(--white);border:1px solid var(--border-light);border-radius:var(--radius);margin-bottom:14px;overflow:hidden;transition:box-shadow .2s,transform .15s;cursor:pointer}
+.wk:hover{box-shadow:0 2px 12px rgba(0,0,0,.04);transform:translateY(-1px)}
+.wk-hd{display:flex;align-items:center;justify-content:space-between;padding:18px 24px;gap:12px;flex-wrap:wrap}
+.wk-left{display:flex;align-items:center;gap:10px}
+.wk-badge{width:42px;height:42px;border-radius:var(--radius-sm);background:var(--text);color:var(--white);display:flex;align-items:center;justify-content:center;font-size:14px;font-weight:700;flex-shrink:0;letter-spacing:-0.02em}
+.wk-info h3{font-size:15px;font-weight:600;letter-spacing:-0.01em}
+.wk-info .wk-date{font-size:12px;color:var(--text3);margin-top:2px;font-weight:500}
+.wk-tags{display:flex;gap:6px;flex-wrap:wrap}
+.tag{display:inline-flex;padding:3px 10px;border-radius:20px;font-size:11px;font-weight:500}
+.tag-blue{background:var(--blue-bg);color:var(--blue)}.tag-red{background:var(--red-bg);color:var(--red)}.tag-purple{background:var(--purple-bg);color:var(--purple)}.tag-amber{background:var(--amber-bg);color:var(--amber)}.tag-green{background:var(--green-bg);color:var(--green)}.tag-pink{background:var(--pink-bg);color:var(--pink)}.tag-cyan{background:var(--cyan-bg);color:var(--cyan)}
+.wk-arrow{font-size:16px;color:var(--text3);transition:transform .3s;flex-shrink:0;font-weight:300}
+.wk.open .wk-arrow{transform:rotate(180deg)}
+.wk-body{max-height:0;overflow:hidden;transition:max-height .45s ease}
+.wk.open .wk-body{max-height:4000px}
+.wk-inner{padding:4px 24px 24px}
+.rpt{padding:16px 20px;border-radius:var(--radius-sm);background:var(--surface2);border:1px solid var(--border-light);margin-bottom:10px;transition:all .15s}
+.rpt:hover{border-color:rgba(0,113,227,.25);background:rgba(0,113,227,.015)}
+.rpt-date{font-size:12px;font-weight:600;color:var(--blue);margin-bottom:5px;display:flex;align-items:center;gap:6px}
+.rpt-date .dot{width:7px;height:7px;border-radius:50%;flex-shrink:0}
+.rpt-title{font-size:15px;font-weight:600;margin-bottom:6px;line-height:1.45;letter-spacing:-0.01em}
+.rpt-title a{color:inherit;text-decoration:underline;text-decoration-color:rgba(0,113,227,.3);text-underline-offset:3px}
+.rpt-title a:hover{color:var(--blue)}
+.rpt-body{font-size:13px;color:var(--text2);line-height:1.7}
+.rpt-body strong{color:var(--text);font-weight:600}
+.rpt-tags{display:flex;gap:5px;margin-top:8px;flex-wrap:wrap}
+.rt{padding:2px 8px;border-radius:5px;font-size:11px;font-weight:500}
+.rt-cat{background:var(--purple-bg);color:var(--purple)}.rt-hi{background:var(--red-bg);color:var(--red)}.rt-mid{background:var(--amber-bg);color:var(--amber)}.rt-lo{background:var(--green-bg);color:var(--green)}
+.note-box{margin-top:14px;padding:16px 20px;border-radius:var(--radius-sm);border-left:3px solid var(--blue);background:var(--blue-bg)}
+.note-box h4{font-size:13px;font-weight:700;color:var(--blue);margin-bottom:6px;letter-spacing:-0.01em}
+.note-box p{font-size:13px;color:var(--text2);line-height:1.7}
+.note-box p strong{color:var(--text)}
+
+.new-tag{display:inline-flex;padding:2px 8px;border-radius:5px;font-size:11px;font-weight:600;background:var(--green-bg);color:var(--green)}
+
+/* ===== Legend ===== */
+.legend{display:flex;gap:14px;flex-wrap:wrap;margin-top:8px;margin-bottom:8px}
+.leg-item{display:flex;align-items:center;gap:5px;font-size:12px;color:var(--text3);font-weight:500}
+.leg-dot{width:8px;height:8px;border-radius:50%}
+
+/* ===== Footer ===== */
+.footer{text-align:center;padding:48px 24px;color:var(--text3);font-size:12px;border-top:1px solid var(--border-light);margin-top:64px;font-weight:400;letter-spacing:-0.01em;line-height:1.6}
+
+/* ===== Responsive ===== */
+@media(max-width:600px){
+  .hero h1{font-size:32px}.hero{padding:48px 20px 40px}
+  .stats{gap:24px}.stat-val{font-size:26px}
+  .impact-block,.pol-block{padding:24px}
+  .wk-hd{padding:14px 16px}.wk-inner{padding:4px 16px 16px}
+  .section{padding:40px 0 0}
+}
+</style>
+</head>
+<body>
+
+<!-- Hero -->
+<div class="hero">
+  <div class="hero-label"><span class="pulse-dot"></span> 持续追踪中</div>
+  <h1>未成年人保护<br>政策周报</h1>
+  <p>新华社 2026 年度未成年人相关报道<br>分类整理与洞察分析</p>
+</div>
+
+<!-- Stats -->
+<div class="stats">
+  <div class="stat"><div class="stat-val c-blue">15</div><div class="stat-lbl">累计报道</div></div>
+  <div class="stat"><div class="stat-val c-green">16</div><div class="stat-lbl">覆盖周数</div></div>
+  <div class="stat"><div class="stat-val c-purple">6</div><div class="stat-lbl">报道分类</div></div>
+  <div class="stat"><div class="stat-val c-amber">3</div><div class="stat-lbl">新规施行</div></div>
+</div>
+
+<!-- ======== Impact: Game ======== -->
+<div class="section"><div class="wrap">
+  <div class="impact-block game">
+    <div class="impact-title">
+      <div class="sec-icon blue"><svg width="20" height="20" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path d="M15 5v2m0 4v2m0 4v2M5 5a2 2 0 00-2 2v3a2 2 0 002 2h14a2 2 0 002-2V7a2 2 0 00-2-2H5zm0 8a2 2 0 00-2 2v1a2 2 0 002 2h14a2 2 0 002-2v-1a2 2 0 00-2-2H5z"/></svg></div>
+      <h3>对腾讯游戏防沉迷的影响</h3>
+    </div>
+    <p class="impact-desc">基于最新政策动态，评估对游戏防沉迷体系的合规要求与能力升级方向</p>
+    <div class="impact-list">
+      <div class="imp-card p0"><div class="imp-head"><span class="pri-tag t-p0">P0 紧急</span><span class="imp-time">7月15日前</span></div><h4>AI NPC / 虚拟角色合规改造</h4><p>《AI拟人化互动服务管理暂行办法》要求：游戏内AI NPC、虚拟角色对话等功能<strong>不得向未成年人提供虚拟亲密关系服务</strong>。14岁以下用户使用须监护人同意。</p><div class="imp-act">各游戏项目组排查AI对话/伴侣功能，建立未成年人模式</div></div>
+      <div class="imp-card p1"><div class="imp-head"><span class="pri-tag t-p1">P1 重要</span><span class="imp-time">已施行</span></div><h4>内容分级与算法推荐过滤</h4><p>《网络信息分类办法》要求游戏推荐系统增加未成年人分级过滤。<strong>首页、弹窗、推荐位不得向未成年人呈现</strong>可能影响身心健康的信息。</p><div class="imp-act">审核游戏内推荐系统、社区UGC内容分级机制</div></div>
+      <div class="imp-card p1"><div class="imp-head"><span class="pri-tag t-p1">P1 重要</span><span class="imp-time">持续</span></div><h4>防沉迷身份验证能力升级</h4><p>澳大利亚禁令<strong>61%用户仍可绕过</strong>，表明单靠年龄门槛无法根治。需强化实名认证+行为识别双重验证。</p><div class="imp-act">优化人脸识别策略，强化疑似未成年人行为模型准确率</div></div>
+      <div class="imp-card p2"><div class="imp-head"><span class="pri-tag t-p2">P2 关注</span><span class="imp-time">趋势</span></div><h4>直播打赏合规升级</h4><p>中央网信办明确<strong>不得向8周岁以下未成年人提供打赏服务</strong>。游戏内直播、打赏类功能需配套限制。</p><div class="imp-act">排查游戏内直播/礼物功能，确保年龄分级到位</div></div>
+      <div class="imp-card opp"><div class="imp-head"><span class="pri-tag t-opp">机会</span><span class="imp-time">利好</span></div><h4>"中国方案"国际输出机遇</h4><p>全球社媒禁令效果不佳，中国防沉迷模式被验证更具可行性。腾讯可作为<strong>行业标杆和国际方案输出案例</strong>。</p><div class="imp-act">结合2025 ESG报告，打造防沉迷国际标杆叙事</div></div>
+    </div>
+  </div>
+
+  <!-- ======== Impact: Guardian ======== -->
+  <div class="impact-block guardian">
+    <div class="impact-title">
+      <div class="sec-icon green"><svg width="20" height="20" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z"/></svg></div>
+      <h3>对成长守护小程序的影响</h3>
+    </div>
+    <p class="impact-desc">评估政策动态对成长守护产品功能规划、运营策略的直接影响与机会窗口</p>
+    <div class="impact-list">
+      <div class="imp-card p0"><div class="imp-head"><span class="pri-tag t-p0">P0 紧急</span><span class="imp-time">7月15日前</span></div><h4>AI功能合规自查</h4><p>若小程序内存在AI角色对话、AI陪伴等拟人化互动功能，需立即评估合规性。<strong>14岁以下用户使用须监护人授权</strong>，须建立未成年人模式。</p><div class="imp-act">盘点现有AI功能，7月15日前完成合规改造方案</div></div>
+      <div class="imp-card opp"><div class="imp-head"><span class="pri-tag t-opp">机会</span><span class="imp-time">强需求</span></div><h4>家长课堂 / 家庭教育指导</h4><p>2025年发出<strong>2.3万份家庭教育指导令</strong>。可增加：家庭教育自测、场景化管控建议、家长学习课程。</p><div class="imp-act">规划"家长课堂"功能模块，与Skill产品化方向结合</div></div>
+      <div class="imp-card opp"><div class="imp-head"><span class="pri-tag t-opp">机会</span><span class="imp-time">政策红利</span></div><h4>心理健康筛查 / 预警能力</h4><p>心理健康教育首次写入政府工作报告。可增加：情绪预警、游戏行为与心理关联分析、心理科普推送。</p><div class="imp-act">结合行为数据，探索心理预警模型（准确率70%→80%）</div></div>
+      <div class="imp-card p1"><div class="imp-head"><span class="pri-tag t-p1">P1 重要</span><span class="imp-time">已施行</span></div><h4>信息展示合规</h4><p>小程序资讯推送、通知公告需对标<strong>四类信息分级标准</strong>，确保不向未成年用户呈现不当内容。</p><div class="imp-act">对标四类信息分级标准，更新内容审核规则</div></div>
+      <div class="imp-card p2"><div class="imp-head"><span class="pri-tag t-p2">P2 关注</span><span class="imp-time">方向</span></div><h4>校园欺凌预防辅助</h4><p>新法要求学校发现欺凌<strong>必须报告</strong>。可探索：欺凌行为识别、家长端安全功能、学校联动机制。</p><div class="imp-act">中长期规划，纳入Skill场景化建议</div></div>
+      <div class="imp-card p2"><div class="imp-head"><span class="pri-tag t-p2">P2 关注</span><span class="imp-time">叙事</span></div><h4>全球比较 · 产品价值包装</h4><p>澳大利亚禁令效果不佳，中国模式被验证有效。成长守护<strong>具有国际标杆叙事价值</strong>。</p><div class="imp-act">月度汇报融入全球对比视角，提升产品战略定位</div></div>
+    </div>
+  </div>
+</div></div>
+
+<!-- ======== Insights ======== -->
+<div class="section"><div class="wrap">
+  <div class="section-head">
+    <h2><svg width="22" height="22" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path d="M9.663 17h4.673M12 3v1m6.364 1.636l-.707.707M21 12h-1M4 12H3m3.343-5.657l-.707-.707m2.828 9.9a5 5 0 117.072 0l-.548.547A3.374 3.374 0 0014 18.469V19a2 2 0 11-4 0v-.531c0-.895-.356-1.754-.988-2.386l-.548-.547z"/></svg> 累计洞察总结</h2>
+    <p>截至第16周的核心发现</p>
+  </div>
+  <div class="insight-grid">
+    <div class="ins-card"><div class="ins-icon" style="background:var(--blue-bg);color:var(--blue)"><svg width="18" height="18" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path d="M3 6l3 1m0 0l-3 9a5.002 5.002 0 006.001 0M6 7l3 9M6 7l6-2m6 2l3-1m-3 1l-3 9a5.002 5.002 0 006.001 0M18 7l3 9m-3-9l-6-2m0-2v2m0 16V5m0 16H9m3 0h3"/></svg></div><h4>精细立法密集期</h4><p>2026年Q1已有<span class="hl">3部重量级法规</span>出台或施行，多部门协同立法成为常态。</p></div>
+    <div class="ins-card"><div class="ins-icon" style="background:var(--pink-bg);color:var(--pink)"><svg width="18" height="18" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path d="M9.75 17L9 20l-1 1h8l-1-1-.75-3M3 13h18M5 17h14a2 2 0 002-2V5a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"/></svg></div><h4>AI成为新战场</h4><p>全球首批AI与未成年人互动专项法规。<span class="hl">7月15日施行</span>，AI产品须建未成年人模式。</p></div>
+    <div class="ins-card"><div class="ins-icon" style="background:var(--cyan-bg);color:var(--cyan)"><svg width="18" height="18" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path d="M12 14l9-5-9-5-9 5 9 5zm0 7l9-5-9-5-9 5 9 5zm0-7v7"/></svg></div><h4>校园欺凌历史性突破</h4><p>首次纳入治安处罚。<span class="hl">"他还是个孩子"不再是挡箭牌</span>，学校知情不报将追责。</p></div>
+    <div class="ins-card"><div class="ins-icon" style="background:var(--amber-bg);color:var(--amber)"><svg width="18" height="18" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0z"/></svg></div><h4>家庭教育从倡导到强制</h4><p>2025年发出<span class="hl">2.3万余份</span>家庭教育指导令。日均63个家庭被法院"责令补课"。</p></div>
+    <div class="ins-card"><div class="ins-icon" style="background:var(--purple-bg);color:var(--purple)"><svg width="18" height="18" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path d="M3.055 11H5a2 2 0 012 2v1a2 2 0 002 2 2 2 0 012 2v2.945M8 3.935V5.5A2.5 2.5 0 0010.5 8h.5a2 2 0 012 2 2 2 0 104 0 2 2 0 012-2h1.064M15 20.488V18a2 2 0 012-2h3.064M21 12a9 9 0 11-18 0 9 9 0 0118 0z"/></svg></div><h4>全球社媒禁令检验</h4><p>澳大利亚禁令四个月：<span class="hl">61%用户仍可绕过</span>。中国分级管理模式更具可行性。</p></div>
+    <div class="ins-card"><div class="ins-icon" style="background:var(--green-bg);color:var(--green)"><svg width="18" height="18" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z"/></svg></div><h4>身心健康国家战略</h4><p>13部门"五健"行动计划启动。心理健康首次写入<span class="hl">政府工作报告</span>。</p></div>
+  </div>
+</div></div>
+
+<!-- ======== Policy Table ======== -->
+<div class="section"><div class="wrap">
+  <div class="pol-block">
+    <h3><svg width="20" height="20" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"/></svg> 政策法规追踪</h3>
+    <p class="pol-sub">追踪 2026 年已出台或即将施行的未成年人相关政策、法规、通知</p>
+    <table class="pol-table">
+      <thead><tr><th>发布主体</th><th>政策/法规名称</th><th>类型</th><th>日期</th><th>状态</th></tr></thead>
+      <tbody>
+        <tr><td><span class="issuer is-blue">全国人大</span></td><td><span class="pol-name"><a href="https://www.xinhuanet.com/legal/20260115/ff3b08cdd4294d4fab8e22c5929ac284/c.html" target="_blank">新修订《治安管理处罚法》</a></span><br><span style="font-size:11px;color:var(--text3)">首次将校园欺凌纳入治安处罚范畴</span></td><td>法律</td><td class="pol-date">2025.11</td><td><span class="sts sts-ok">已施行 1.1</span></td></tr>
+        <tr><td><span class="issuer is-green">卫健委等13部门</span></td><td><span class="pol-name"><a href="https://www.news.cn/20251230/c351210fa0574003a4f0b73491db110c/c.html" target="_blank">儿童青少年"五健"促进行动计划</a></span><br><span style="font-size:11px;color:var(--text3)">聚焦肥胖、近视、心理、脊柱、龋齿</span></td><td>行动计划</td><td class="pol-date">2025.12.30</td><td><span class="sts sts-ok">已启动</span></td></tr>
+        <tr><td><span class="issuer is-cyan">最高人民法院</span></td><td><span class="pol-name"><a href="https://www.news.cn/politics/20260104/f66d5da8543e4b229c859b95e9e82942/c.html" target="_blank">"家庭教育指导令"典型案例</a></span><br><span style="font-size:11px;color:var(--text3)">6个案例，明确家庭教育缺位可追责</span></td><td>司法文件</td><td class="pol-date">2026.1.4</td><td><span class="sts sts-ok">已发布</span></td></tr>
+        <tr><td><span class="issuer is-red">网信办等八部门</span></td><td><span class="pol-name"><a href="https://www.news.cn/politics/20260123/39bdddfc3a254538a89c2c92e1494091/c.html" target="_blank">《未成年人网络信息分类办法》</a></span><br><span style="font-size:11px;color:var(--text3)">明确4类有害信息，禁止醒目位置呈现</span></td><td>部门规章</td><td class="pol-date">2026.1.23</td><td><span class="sts sts-ok">已施行 3.1</span></td></tr>
+        <tr><td><span class="issuer is-purple">国务院</span></td><td><span class="pol-name"><a href="http://lianghui.people.com.cn/2026/n1/2026/0313/c461827-40681711.html" target="_blank">2026年政府工作报告</a></span><br><span style="font-size:11px;color:var(--text3)">加强心理健康教育，健全协同育人机制</span></td><td>政策倡导</td><td class="pol-date">2026.3.5</td><td><span class="sts sts-ok">已发布</span></td></tr>
+        <tr><td><span class="issuer is-cyan">最高人民法院</span></td><td><span class="pol-name"><a href="http://www3.xinhuanet.com/politics/20260309/730576b673aa4eafb9700694dc0ae201/c.html" target="_blank">最高法工作报告（未成年人部分）</a></span><br><span style="font-size:11px;color:var(--text3)">2.3万余份家庭教育指导令；犯罪遏制</span></td><td>工作报告</td><td class="pol-date">2026.3.9</td><td><span class="sts sts-ok">已发布</span></td></tr>
+        <tr><td><span class="issuer is-blue">河北省人大</span></td><td><span class="pol-name"><a href="https://sfj.lf.gov.cn/system/2026/04/13/030380631.shtml" target="_blank">《河北省预防未成年人犯罪条例》</a></span><br><span style="font-size:11px;color:var(--text3)">地方配套立法</span></td><td>地方法规</td><td class="pol-date">2026.3.26</td><td><span class="sts sts-soon">5.1施行</span></td></tr>
+        <tr><td><span class="issuer is-pink">网信办等五部门</span></td><td><span class="pol-name"><a href="https://www.news.cn/tech/20260410/3fe5e75f1f554355820c1c720ec01668/c.html" target="_blank">《AI拟人化互动服务管理暂行办法》</a></span><br><span style="font-size:11px;color:var(--text3)">禁止向未成年人提供虚拟伴侣服务</span></td><td>部门规章</td><td class="pol-date">2026.4.10</td><td><span class="sts sts-soon">7.15施行</span></td></tr>
+        <tr><td><span class="issuer is-amber">中央网信办</span></td><td><span class="pol-name"><a href="https://www.chinanews.com/gn/2026/04-13/10602945.shtml" target="_blank">《网络直播打赏规范管理通知》</a></span><br><span style="font-size:11px;color:var(--text3)">不得向8周岁以下提供打赏</span></td><td>通知</td><td class="pol-date">2026.4.13</td><td><span class="sts sts-ok">已发布</span></td></tr>
+      </tbody>
+    </table>
+  </div>
+</div></div>
+
+<!-- ======== Weekly Timeline ======== -->
+<div class="section"><div class="wrap">
+  <div class="section-head">
+    <h2><svg width="22" height="22" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z"/></svg> 每周动态追踪</h2>
+    <p>按周倒序排列，点击卡片展开详情</p>
+  </div>
+  <div class="legend">
+    <div class="leg-item"><div class="leg-dot" style="background:var(--blue)"></div>网络保护</div>
+    <div class="leg-item"><div class="leg-dot" style="background:var(--cyan)"></div>校园安全</div>
+    <div class="leg-item"><div class="leg-dot" style="background:var(--amber)"></div>家庭教育</div>
+    <div class="leg-item"><div class="leg-dot" style="background:var(--green)"></div>身心健康</div>
+    <div class="leg-item"><div class="leg-dot" style="background:var(--pink)"></div>AI治理</div>
+    <div class="leg-item"><div class="leg-dot" style="background:var(--purple)"></div>国际动态</div>
+  </div>
+
+  <!-- W16 -->
+  <div class="wk open" onclick="this.classList.toggle('open')">
+    <div class="wk-hd"><div class="wk-left"><div class="wk-badge">W16</div><div class="wk-info"><h3>澳社媒禁令成效评估 + 平台执法行动</h3><div class="wk-date">2026.04.14 — 04.20</div></div></div><div class="wk-tags"><span class="tag tag-purple">国际评估</span><span class="new-tag">最新</span></div><span class="wk-arrow">&#9662;</span></div>
+    <div class="wk-body"><div class="wk-inner">
+      <div class="rpt"><div class="rpt-date"><span class="dot" style="background:var(--purple)"></span>2026.04.14</div><div class="rpt-title"><a href="https://www.news.cn/world/20260414/28b20892e3a7468190f3105c42da6a42/c.html" target="_blank">澳大利亚未成年人社媒禁令实施四个月 喜忧参半</a></div><div class="rpt-body"><strong>61%</strong>已注册未成年用户仍能登录；半数认为禁令<strong>未改善</strong>网络安全；<strong>61%</strong>家长反馈积极变化。</div><div class="rpt-tags"><span class="rt rt-cat">国际动态</span><span class="rt rt-hi">影响: 高</span></div></div>
+      <div class="rpt"><div class="rpt-date"><span class="dot" style="background:var(--blue)"></span>2026.04.15</div><div class="rpt-title"><a href="https://cn.chinadaily.com.cn/a/202604/15/WS69df48cea310942cc49a7bd4.html" target="_blank">抖音严打借"交友陪伴"向未成年人传播不良信息</a></div><div class="rpt-body">打击AI技术<strong>恶意篡改</strong>经典动画；清理AI生成虚假内容引流。近一月处罚<strong>144个</strong>账号。</div><div class="rpt-tags"><span class="rt rt-cat">网络保护</span><span class="rt rt-cat">AI治理</span><span class="rt rt-mid">影响: 中</span></div></div>
+      <div class="note-box"><h4>本周洞察</h4><p>"<strong>禁</strong>"的效果远不如"<strong>管</strong>"。抖音整治表明<strong>AI生成内容正成为新型挑战</strong>，平台需建设AI内容溯源+智能审核双重能力。</p></div>
+    </div></div>
+  </div>
+  <!-- W15 -->
+  <div class="wk" onclick="this.classList.toggle('open')">
+    <div class="wk-hd"><div class="wk-left"><div class="wk-badge">W15</div><div class="wk-info"><h3>AI拟人化互动重磅管理办法发布</h3><div class="wk-date">2026.04.07 — 04.13</div></div></div><div class="wk-tags"><span class="tag tag-pink">AI治理</span><span class="tag tag-red">五部门联合</span><span class="tag tag-blue">重大政策</span></div><span class="wk-arrow">&#9662;</span></div>
+    <div class="wk-body"><div class="wk-inner">
+      <div class="rpt"><div class="rpt-date"><span class="dot" style="background:var(--pink)"></span>2026.04.10</div><div class="rpt-title"><a href="https://www.news.cn/tech/20260410/3fe5e75f1f554355820c1c720ec01668/c.html" target="_blank">五部门发文规范人工智能拟人化互动服务</a></div><div class="rpt-body"><strong>严禁</strong>向未成年人提供虚拟伴侣服务；不满<strong>14周岁</strong>须监护人同意；须建<strong>未成年人模式</strong>。<strong>7月15日</strong>施行。</div><div class="rpt-tags"><span class="rt rt-cat">AI治理</span><span class="rt rt-hi">影响: 极高</span></div></div>
+      <div class="rpt"><div class="rpt-date"><span class="dot" style="background:var(--pink)"></span>2026.04.10</div><div class="rpt-title"><a href="https://www.cac.gov.cn/2026-04/10/c_1777558285804391.htm" target="_blank">专家解读 | 人工智能拟人化互动服务的制度指引</a></div><div class="rpt-body">AI拟人化可能导致未成年人<strong>混淆虚拟与现实、产生情感依赖</strong>。体现"事前预防"思路。</div><div class="rpt-tags"><span class="rt rt-cat">AI治理</span><span class="rt rt-hi">影响: 高</span></div></div>
+      <div class="rpt"><div class="rpt-date"><span class="dot" style="background:var(--blue)"></span>2026.04.13</div><div class="rpt-title"><a href="https://www.chinanews.com/gn/2026/04-13/10602945.shtml" target="_blank">中央网信办：不得向八周岁以下未成年人提供打赏服务</a></div><div class="rpt-body">规范网络直播营利行为。</div><div class="rpt-tags"><span class="rt rt-cat">网络保护</span><span class="rt rt-mid">影响: 中</span></div></div>
+      <div class="note-box"><h4>本周洞察</h4><p><strong>AI已成为未成年人保护新战场</strong>。成长守护需评估AI功能——<strong>7月15日前完成合规改造</strong>。</p></div>
+    </div></div>
+  </div>
+  <!-- W12-14 -->
+  <div class="wk" onclick="this.classList.toggle('open')">
+    <div class="wk-hd"><div class="wk-left"><div class="wk-badge" style="font-size:11px">W12-14</div><div class="wk-info"><h3>两会后政策落地期</h3><div class="wk-date">2026.03.17 — 04.06</div></div></div><div class="wk-tags"></div><span class="wk-arrow">&#9662;</span></div>
+    <div class="wk-body"><div class="wk-inner"><div class="note-box"><h4>备注</h4><p><strong>河北省通过《预防未成年人犯罪条例》</strong>（5月1日施行）。希腊宣布2027年1月起禁止15岁以下使用社交媒体。</p></div></div></div>
+  </div>
+  <!-- W11 -->
+  <div class="wk" onclick="this.classList.toggle('open')">
+    <div class="wk-hd"><div class="wk-left"><div class="wk-badge">W11</div><div class="wk-info"><h3>两会续篇：家庭教育 + 心理健康</h3><div class="wk-date">2026.03.10 — 03.16</div></div></div><div class="wk-tags"><span class="tag tag-red">全国两会</span><span class="tag tag-amber">家庭教育</span><span class="tag tag-green">心理健康</span></div><span class="wk-arrow">&#9662;</span></div>
+    <div class="wk-body"><div class="wk-inner">
+      <div class="rpt"><div class="rpt-date"><span class="dot" style="background:var(--amber)"></span>2026.03.11</div><div class="rpt-title"><a href="https://finance.sina.com.cn/roll/2026-03-11/doc-inhqrfcr5554015.shtml" target="_blank">给家长"补课"：2025年共发出2.3万余份家庭教育指导令</a></div><div class="rpt-body">家庭教育从"倡导"走向<strong>"强制"</strong>。</div><div class="rpt-tags"><span class="rt rt-cat">家庭教育</span><span class="rt rt-hi">影响: 高</span></div></div>
+      <div class="rpt"><div class="rpt-date"><span class="dot" style="background:var(--green)"></span>2026.03.13</div><div class="rpt-title"><a href="https://news.cctv.com/2026/03/13/ARTIZNajsm0wvMXqhReNm8Bo260313.shtml" target="_blank">以心育人，护航成长：筑牢学生心理健康防线</a></div><div class="rpt-body">政府工作报告明确提出加强<strong>心理健康教育</strong>。</div><div class="rpt-tags"><span class="rt rt-cat">身心健康</span><span class="rt rt-mid">影响: 中</span></div></div>
+      <div class="note-box"><h4>本周洞察</h4><p>日均<strong>63个家庭</strong>被法院"责令补课"。心理健康教育写入政府工作报告，成长守护迎来<strong>政策红利期</strong>。</p></div>
+    </div></div>
+  </div>
+  <!-- W10 -->
+  <div class="wk" onclick="this.classList.toggle('open')">
+    <div class="wk-hd"><div class="wk-left"><div class="wk-badge">W10</div><div class="wk-info"><h3>两会聚焦：未成年人犯罪遏制</h3><div class="wk-date">2026.03.03 — 03.09</div></div></div><div class="wk-tags"><span class="tag tag-red">全国两会</span><span class="tag tag-cyan">司法保护</span></div><span class="wk-arrow">&#9662;</span></div>
+    <div class="wk-body"><div class="wk-inner">
+      <div class="rpt"><div class="rpt-date"><span class="dot" style="background:var(--cyan)"></span>2026.03.09</div><div class="rpt-title"><a href="http://www3.xinhuanet.com/politics/20260309/730576b673aa4eafb9700694dc0ae201/c.html" target="_blank">两会快讯：未成年人犯罪高发势头得到有效遏制</a></div><div class="rpt-body">审结<strong>4万件4.4万人</strong>，同比下降1.8%；<strong>1199人</strong>被禁止接触未成年人。</div><div class="rpt-tags"><span class="rt rt-cat">司法保护</span><span class="rt rt-hi">影响: 高</span></div></div>
+      <div class="note-box"><h4>本周洞察</h4><p><strong>"零容忍"</strong>已成可量化的司法实践。从业禁止制度形成制度性威慑。</p></div>
+    </div></div>
+  </div>
+  <!-- W9 -->
+  <div class="wk" onclick="this.classList.toggle('open')">
+    <div class="wk-hd"><div class="wk-left"><div class="wk-badge">W9</div><div class="wk-info"><h3>韩国降龄 + 社媒禁令挑战分析</h3><div class="wk-date">2026.02.24 — 03.02</div></div></div><div class="wk-tags"><span class="tag tag-purple">国际动态</span></div><span class="wk-arrow">&#9662;</span></div>
+    <div class="wk-body"><div class="wk-inner">
+      <div class="rpt"><div class="rpt-date"><span class="dot" style="background:var(--purple)"></span>2026.02.25</div><div class="rpt-title"><a href="https://news.cctv.com/2026/02/25/ARTIF3Vqk7ZHAJOhEKza8mkF260225.shtml" target="_blank">青少年犯罪激增 韩国考虑下调刑事责任年龄</a></div><div class="rpt-body">刑事责任年龄从<strong>14周岁下调</strong>。</div><div class="rpt-tags"><span class="rt rt-cat">国际动态</span><span class="rt rt-mid">影响: 中</span></div></div>
+      <div class="rpt"><div class="rpt-date"><span class="dot" style="background:var(--purple)"></span>2026.02.28</div><div class="rpt-title"><a href="https://news.sina.com.cn/zx/gj/2026-02-28/doc-inhpimsu0249275.shtml" target="_blank">青少年"社媒禁令"面临哪些挑战</a></div><div class="rpt-body"><strong>年龄验证技术难题、平台合规困境</strong>、覆盖范围有限。</div><div class="rpt-tags"><span class="rt rt-cat">国际动态</span><span class="rt rt-cat">网络保护</span><span class="rt rt-mid">影响: 中</span></div></div>
+      <div class="note-box"><h4>本周洞察</h4><p>国际"从严"趋势明确。单纯年龄门槛效果有限，<strong>中国组合拳更具可行性</strong>。</p></div>
+    </div></div>
+  </div>
+  <!-- W7-8 -->
+  <div class="wk" onclick="this.classList.toggle('open')">
+    <div class="wk-hd"><div class="wk-left"><div class="wk-badge" style="font-size:12px">W7-8</div><div class="wk-info"><h3>政策消化期</h3><div class="wk-date">2026.02.10 — 02.23</div></div></div><div class="wk-tags"></div><span class="wk-arrow">&#9662;</span></div>
+    <div class="wk-body"><div class="wk-inner"><div class="note-box"><h4>备注</h4><p>两会前夕政策准备期。《网络信息分类办法》将于3月1日施行。</p></div></div></div>
+  </div>
+  <!-- W6 -->
+  <div class="wk" onclick="this.classList.toggle('open')">
+    <div class="wk-hd"><div class="wk-left"><div class="wk-badge">W6</div><div class="wk-info"><h3>全球社媒禁令浪潮</h3><div class="wk-date">2026.02.03 — 02.09</div></div></div><div class="wk-tags"><span class="tag tag-purple">国际趋势</span><span class="tag tag-red">全球关注</span></div><span class="wk-arrow">&#9662;</span></div>
+    <div class="wk-body"><div class="wk-inner">
+      <div class="rpt"><div class="rpt-date"><span class="dot" style="background:var(--purple)"></span>2026.02.05</div><div class="rpt-title"><a href="https://www.news.cn/world/20260205/b9ab0fa4815f45a19aa4cbfe3f35ea5b/c.html" target="_blank">多国为何要筑未成年人社交媒体"防火墙"</a></div><div class="rpt-body">澳大利亚16岁以下、法国15岁以下、英国/西班牙跟进中。<strong>96%</strong>儿童使用社媒，<strong>七成</strong>接触过有害内容。</div><div class="rpt-tags"><span class="rt rt-cat">国际动态</span><span class="rt rt-cat">网络保护</span><span class="rt rt-hi">影响: 高</span></div></div>
+      <div class="note-box"><h4>本周洞察</h4><p>全球形成社媒管控共识。为中国<strong>"分级管理+技术治理"模式</strong>提供比较优势论证。</p></div>
+    </div></div>
+  </div>
+  <!-- W5 -->
+  <div class="wk" onclick="this.classList.toggle('open')">
+    <div class="wk-hd"><div class="wk-left"><div class="wk-badge">W5</div><div class="wk-info"><h3>春节假期 · 政策准备期</h3><div class="wk-date">2026.01.27 — 02.02</div></div></div><div class="wk-tags"></div><span class="wk-arrow">&#9662;</span></div>
+    <div class="wk-body"><div class="wk-inner"><div class="note-box"><h4>备注</h4><p>春节假期。《网络信息分类办法》将于3月1日施行。</p></div></div></div>
+  </div>
+  <!-- W4 -->
+  <div class="wk" onclick="this.classList.toggle('open')">
+    <div class="wk-hd"><div class="wk-left"><div class="wk-badge">W4</div><div class="wk-info"><h3>八部门发布网络信息分类办法</h3><div class="wk-date">2026.01.20 — 01.26</div></div></div><div class="wk-tags"><span class="tag tag-blue">重大政策</span><span class="tag tag-red">八部门联合</span></div><span class="wk-arrow">&#9662;</span></div>
+    <div class="wk-body"><div class="wk-inner">
+      <div class="rpt"><div class="rpt-date"><span class="dot" style="background:var(--blue)"></span>2026.01.23</div><div class="rpt-title"><a href="https://www.news.cn/politics/20260123/39bdddfc3a254538a89c2c92e1494091/c.html" target="_blank">八部门发布《可能影响未成年人身心健康的网络信息分类办法》</a></div><div class="rpt-body">明确<strong>4类</strong>有害信息。将算法推荐、<strong>生成式AI</strong>风险纳入治理。<strong>3月1日施行</strong>。</div><div class="rpt-tags"><span class="rt rt-cat">网络保护</span><span class="rt rt-hi">影响: 高</span></div></div>
+      <div class="note-box"><h4>本周洞察</h4><p>监管追赶技术发展。所有互联网产品必须建立<strong>信息分级制度</strong>。</p></div>
+    </div></div>
+  </div>
+  <!-- W3 -->
+  <div class="wk" onclick="this.classList.toggle('open')">
+    <div class="wk-hd"><div class="wk-left"><div class="wk-badge">W3</div><div class="wk-info"><h3>校园欺凌首入治安处罚</h3><div class="wk-date">2026.01.13 — 01.19</div></div></div><div class="wk-tags"><span class="tag tag-cyan">校园安全</span><span class="tag tag-red">重磅新规</span></div><span class="wk-arrow">&#9662;</span></div>
+    <div class="wk-body"><div class="wk-inner">
+      <div class="rpt"><div class="rpt-date"><span class="dot" style="background:var(--cyan)"></span>2026.01.15</div><div class="rpt-title"><a href="https://www.xinhuanet.com/legal/20260115/ff3b08cdd4294d4fab8e22c5929ac284/c.html" target="_blank">杜绝"校园欺凌"！新规筑牢未成年人安全新防线</a></div><div class="rpt-body"><strong>首次纳入治安管理处罚</strong>：14-16周岁一年两次以上可拘留；学校知情不报<strong>追责</strong>。</div><div class="rpt-tags"><span class="rt rt-cat">校园安全</span><span class="rt rt-hi">影响: 高</span></div></div>
+      <div class="note-box"><h4>本周洞察</h4><p>从"道德谴责"转向"法律震慑"。明确界定<strong>五类欺凌行为</strong>。</p></div>
+    </div></div>
+  </div>
+  <!-- W2 -->
+  <div class="wk" onclick="this.classList.toggle('open')">
+    <div class="wk-hd"><div class="wk-left"><div class="wk-badge">W2</div><div class="wk-info"><h3>本周无重大报道</h3><div class="wk-date">2026.01.06 — 01.12</div></div></div><div class="wk-tags"></div><span class="wk-arrow">&#9662;</span></div>
+    <div class="wk-body"><div class="wk-inner"><div class="note-box"><h4>备注</h4><p>新修订《治安管理处罚法》已于1月1日施行。</p></div></div></div>
+  </div>
+  <!-- W1 -->
+  <div class="wk" onclick="this.classList.toggle('open')">
+    <div class="wk-hd"><div class="wk-left"><div class="wk-badge">W1</div><div class="wk-info"><h3>开年重磅：家庭教育 + "五健"行动</h3><div class="wk-date">2025.12.30 — 2026.01.05</div></div></div><div class="wk-tags"><span class="tag tag-amber">家庭教育</span><span class="tag tag-green">身心健康</span></div><span class="wk-arrow">&#9662;</span></div>
+    <div class="wk-body"><div class="wk-inner">
+      <div class="rpt"><div class="rpt-date"><span class="dot" style="background:var(--green)"></span>2025.12.30</div><div class="rpt-title"><a href="https://www.news.cn/20251230/c351210fa0574003a4f0b73491db110c/c.html" target="_blank">13部门发布儿童青少年"五健"促进行动计划（2026—2030年）</a></div><div class="rpt-body">聚焦<strong>肥胖、近视、心理行为异常、脊柱弯曲、龋齿</strong>五大问题。</div><div class="rpt-tags"><span class="rt rt-cat">身心健康</span><span class="rt rt-hi">影响: 高</span></div></div>
+      <div class="rpt"><div class="rpt-date"><span class="dot" style="background:var(--amber)"></span>2026.01.04</div><div class="rpt-title"><a href="https://www.news.cn/politics/20260104/f66d5da8543e4b229c859b95e9e82942/c.html" target="_blank">最高法发布"家庭教育指导令"司法适用典型案例</a></div><div class="rpt-body">6个典型案例：<strong>犯罪与家庭教育缺位高度相关</strong>。发出<strong>2.3万余份</strong>指导令。</div><div class="rpt-tags"><span class="rt rt-cat">家庭教育</span><span class="rt rt-hi">影响: 高</span></div></div>
+      <div class="note-box"><h4>本周洞察</h4><p>"五健"计划上升到<strong>13部门级国家战略</strong>；家庭教育指导令常态化。核心信号：<strong>家庭责任的法律化</strong>。</p></div>
+    </div></div>
+  </div>
+
+</div></div>
+
+<!-- Footer -->
+<div class="footer">
+  未成年人保护政策周报 · 成长守护平台政策研究<br>
+  数据来源：新华社 / 新华网 / 中央政府网 · 最后更新：2026年4月21日（第16周）<br>
+  <span style="margin-top:4px;display:inline-block">如需转发请注明来源 · 持续更新中</span>
+</div>
+
+</body>
+</html>
